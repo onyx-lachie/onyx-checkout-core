@@ -1,0 +1,141 @@
+<!-- ==========================================================================
+   Onyx Core Checkout - HTML Blocks for GHL Page Builder
+   Add these as Custom HTML/Code blocks in the left column of your GHL page.
+   These require the CSS from ghl-css-only.css AND the styles below.
+   ========================================================================== -->
+
+
+<!-- =============================================
+     STYLE BLOCK
+     Add this once as a Custom Code block (or in the page's custom CSS)
+     ============================================= -->
+<style>
+/* What Happens Next */
+.next-steps { margin-top: 32px; padding-top: 32px; border-top: 1px solid #E8EAF0; }
+.next-steps-heading { font-size: 18px; font-weight: 700; color: #1C1C1E; margin-bottom: 20px; font-family: 'Inter', sans-serif; }
+.next-steps-list { display: flex; flex-direction: column; gap: 16px; }
+.next-step { display: flex; align-items: flex-start; gap: 14px; }
+.next-step-number { width: 28px; height: 28px; min-width: 28px; background-color: #00F0B5; color: #1C1C1E; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; margin-top: 2px; font-family: 'Inter', sans-serif; }
+.next-step-text { display: flex; flex-direction: column; gap: 2px; }
+.next-step-text strong { font-size: 14px; font-weight: 600; color: #1C1C1E; font-family: 'Inter', sans-serif; }
+.next-step-text span { font-size: 13px; color: #9DA2B3; font-family: 'Inter', sans-serif; }
+
+/* Money-Back Guarantee */
+.guarantee-badge { margin-top: 28px; background: #E6FFF8; border: 1px solid rgba(0, 240, 181, 0.3); border-radius: 12px; padding: 20px; display: flex; align-items: flex-start; gap: 14px; }
+.guarantee-icon { font-size: 24px; min-width: 32px; text-align: center; }
+.guarantee-badge p { font-size: 13px; color: #1C1C1E; line-height: 1.6; margin: 0; font-family: 'Inter', sans-serif; }
+.guarantee-badge strong { font-weight: 700; }
+
+/* Testimonial */
+.testimonial-card { margin-top: 20px; background: #F8FAFB; border: 1px solid #E8EAF0; border-radius: 12px; padding: 20px; }
+.testimonial-quote { font-size: 14px; color: #6E7180; line-height: 1.7; font-style: italic; margin-bottom: 16px; font-family: 'Inter', sans-serif; }
+.testimonial-author { display: flex; align-items: center; gap: 12px; }
+.testimonial-avatar { width: 36px; height: 36px; background-color: #00F0B5; color: #1C1C1E; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; font-family: 'Inter', sans-serif; }
+.testimonial-author strong { display: block; font-size: 14px; font-weight: 600; color: #1C1C1E; font-family: 'Inter', sans-serif; }
+.testimonial-author span { font-size: 12px; color: #9DA2B3; font-family: 'Inter', sans-serif; }
+
+/* Order Summary (Step 2) */
+.order-summary-card { background: #FFFFFF; border: 1px solid #E8EAF0; border-radius: 12px; padding: 24px; }
+.order-summary-row { display: flex; justify-content: space-between; align-items: center; }
+.order-summary-label { font-size: 15px; font-weight: 500; color: #6E7180; font-family: 'Inter', sans-serif; }
+.order-summary-price { font-size: 18px; font-weight: 700; color: #1C1C1E; font-family: 'Inter', sans-serif; }
+.order-summary-total .order-summary-label { font-weight: 700; color: #1C1C1E; }
+.order-summary-total .order-summary-price { font-size: 22px; }
+.order-summary-divider { height: 1px; background: #E8EAF0; margin: 16px 0; }
+.coupon-section label { font-size: 13px; font-weight: 600; color: #1C1C1E; display: block; margin-bottom: 6px; font-family: 'Inter', sans-serif; }
+.coupon-input-row { display: flex; gap: 8px; }
+.coupon-input-row input { flex: 1; height: 42px; border: 1.5px solid #E8EAF0; border-radius: 10px; padding: 0 14px; font-size: 14px; font-family: 'Inter', sans-serif; }
+.coupon-input-row input:focus { border-color: #00F0B5; box-shadow: 0 0 0 3px rgba(0, 240, 181, 0.12); outline: none; }
+.coupon-apply-btn { height: 42px; padding: 0 20px; background-color: #1C1C1E; color: #FFFFFF; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif; }
+.coupon-apply-btn:hover { background-color: #2C2C2E; }
+</style>
+
+
+<!-- =============================================
+     BLOCK 1: What Happens Next
+     Add below the features bullet list on BOTH steps
+     ============================================= -->
+<div class="next-steps">
+  <h3 class="next-steps-heading">What Happens Next</h3>
+  <div class="next-steps-list">
+    <div class="next-step">
+      <div class="next-step-number">1</div>
+      <div class="next-step-text">
+        <strong>Complete payment</strong>
+        <span>Secure checkout — takes less than 2 minutes</span>
+      </div>
+    </div>
+    <div class="next-step">
+      <div class="next-step-number">2</div>
+      <div class="next-step-text">
+        <strong>Log in to Onyx & complete Get Started</strong>
+        <span>Your account is ready immediately</span>
+      </div>
+    </div>
+    <div class="next-step">
+      <div class="next-step-number">3</div>
+      <div class="next-step-text">
+        <strong>Book your onboarding call</strong>
+        <span>We'll walk you through everything</span>
+      </div>
+    </div>
+    <div class="next-step">
+      <div class="next-step-number">4</div>
+      <div class="next-step-text">
+        <strong>Start booking appointments</strong>
+        <span>Let Onyx do the heavy lifting</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- =============================================
+     BLOCK 2: Money-Back Guarantee
+     Add below "What Happens Next" on BOTH steps
+     ============================================= -->
+<div class="guarantee-badge">
+  <div class="guarantee-icon">&#128737;</div>
+  <p><strong>14-Day Money-Back Guarantee</strong> — Try Onyx risk-free. If you're not completely satisfied within 14 days, we'll refund your subscription fee. No questions asked.</p>
+</div>
+
+
+<!-- =============================================
+     BLOCK 3: Testimonial
+     Add below the guarantee on Step 1 only
+     ============================================= -->
+<div class="testimonial-card">
+  <p class="testimonial-quote">"Onyx has completely transformed how I manage my leads. I went from chasing people down to having appointments booked automatically. It's a game changer."</p>
+  <div class="testimonial-author">
+    <div class="testimonial-avatar">JM</div>
+    <div>
+      <strong>Jason M.</strong>
+      <span>Insurance Agent</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- =============================================
+     BLOCK 4: Order Summary with Coupon (Step 2 only)
+     Add at top of left column on Step 2
+     ============================================= -->
+<div class="order-summary-card">
+  <div class="order-summary-row">
+    <span class="order-summary-label">Onyx Core</span>
+    <span class="order-summary-price">$99/mo</span>
+  </div>
+  <div class="order-summary-divider"></div>
+  <div class="coupon-section">
+    <label>Coupon Code</label>
+    <div class="coupon-input-row">
+      <input type="text" placeholder="Enter coupon code" />
+      <button class="coupon-apply-btn">Apply</button>
+    </div>
+  </div>
+  <div class="order-summary-divider"></div>
+  <div class="order-summary-row order-summary-total">
+    <span class="order-summary-label">Total due today</span>
+    <span class="order-summary-price">$99.00</span>
+  </div>
+</div>

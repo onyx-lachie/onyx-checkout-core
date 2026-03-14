@@ -1,0 +1,241 @@
+/* ==========================================================================
+   Onyx Core Thank You Page - CSS Overrides for GHL
+   Matches onyx-crm.com brand. Paste into GHL Custom CSS.
+   ========================================================================== */
+
+/* ---------- Google Font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ---------- Global Overrides ---------- */
+body,
+body * {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* ---------- Header ---------- */
+.section-Aj8N1RzjU {
+  background-color: #FFFFFF !important;
+  padding: 16px 0 !important;
+  border-bottom: 1px solid #E8EAF0 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* ---------- Main Content Section ---------- */
+.section-Bhz71NLQwr {
+  background-color: #F8FAFB !important;
+  padding: 60px 0 !important;
+}
+
+/* ---------- Content Container ---------- */
+.row-bmptm2QSlX,
+.row-sJ8PHWEknt {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+}
+
+/* ---------- Main Heading - "Thank You" ---------- */
+.heading-o2mV-p-d6,
+.heading-o2mV-p-d6 h1,
+.heading-o2mV-p-d6 h2 {
+  color: #1C1C1E !important;
+  font-size: 36px !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  text-align: center !important;
+  margin-bottom: 12px !important;
+}
+
+/* ---------- Sub Heading - Instructions ---------- */
+.heading-W89qyZ9Szi,
+.heading-W89qyZ9Szi h2,
+.heading-W89qyZ9Szi h3 {
+  color: #6E7180 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  line-height: 1.6 !important;
+  margin-bottom: 8px !important;
+}
+
+/* ---------- Paragraph - Junk mail note ---------- */
+.paragraph-EFyqJm5ptq,
+.paragraph-EFyqJm5ptq p {
+  color: #9DA2B3 !important;
+  font-size: 14px !important;
+  text-align: center !important;
+  margin-bottom: 32px !important;
+}
+
+/* ---------- Video Container ---------- */
+.video-SkTXubPjjE,
+[class*="video-"] {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid #E8EAF0 !important;
+  margin: 0 auto 32px !important;
+}
+
+.video-SkTXubPjjE video,
+[class*="video-"] video,
+[class*="video-"] iframe {
+  border-radius: 16px !important;
+}
+
+/* ---------- Login Button ---------- */
+.button-TWpbAHZRxF,
+.button-TWpbAHZRxF a,
+.button-TWpbAHZRxF button {
+  background-color: #00F0B5 !important;
+  color: #1C1C1E !important;
+  border: none !important;
+  border-radius: 10px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  padding: 14px 40px !important;
+  letter-spacing: -0.01em !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+.button-TWpbAHZRxF:hover,
+.button-TWpbAHZRxF a:hover,
+.button-TWpbAHZRxF button:hover {
+  background-color: #00D9A3 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 16px rgba(0, 240, 181, 0.3) !important;
+}
+
+/* ---------- All generic buttons on page ---------- */
+[class*="button-"] a,
+[class*="button-"] button {
+  background-color: #00F0B5 !important;
+  color: #1C1C1E !important;
+  border: none !important;
+  border-radius: 10px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  padding: 14px 40px !important;
+  text-decoration: none !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+[class*="button-"] a:hover,
+[class*="button-"] button:hover {
+  background-color: #00D9A3 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 16px rgba(0, 240, 181, 0.3) !important;
+}
+
+/* ---------- All Headings ---------- */
+[class*="heading-"] {
+  color: #1C1C1E !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* ---------- All Paragraphs ---------- */
+[class*="paragraph-"],
+[class*="paragraph-"] p {
+  color: #6E7180 !important;
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+
+/* ---------- All Sub-headings ---------- */
+[class*="sub-heading-"] {
+  color: #6E7180 !important;
+  font-size: 14px !important;
+}
+
+/* ---------- Links ---------- */
+a {
+  color: #00F0B5 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+a:hover {
+  color: #00D9A3 !important;
+}
+
+/* ---------- Footer ---------- */
+.section-DO4P8iOVw {
+  background-color: #1C1C1E !important;
+  padding: 0 !important;
+  border-top: 1px solid #40424D !important;
+}
+
+.section-DO4P8iOVw [class*="row-"] {
+  padding: 20px 0 !important;
+}
+
+.section-DO4P8iOVw [class*="sub-heading-"],
+.section-DO4P8iOVw [class*="sub-heading-"] * {
+  color: #6E7180 !important;
+  font-size: 13px !important;
+}
+
+.section-DO4P8iOVw a {
+  color: #6E7180 !important;
+}
+
+.section-DO4P8iOVw a:hover {
+  color: #00F0B5 !important;
+}
+
+/* ---------- Popup Form ---------- */
+.hl_main_popup .popup-body {
+  border-radius: 16px !important;
+  border: 1px solid #E8EAF0 !important;
+  background: #FFFFFF !important;
+}
+
+.hl_main_popup .form-input input,
+.hl_main_popup .form-input select,
+.hl_main_popup .form-input textarea {
+  height: 48px !important;
+  border: 1.5px solid #E8EAF0 !important;
+  border-radius: 10px !important;
+  font-size: 15px !important;
+  padding: 0 14px !important;
+}
+
+.hl_main_popup .form-input input:focus {
+  border-color: #00F0B5 !important;
+  box-shadow: 0 0 0 3px rgba(0, 240, 181, 0.12) !important;
+  outline: none !important;
+}
+
+.hl_main_popup .form-btn button,
+.hl_main_popup button[type="submit"] {
+  background-color: #00F0B5 !important;
+  color: #1C1C1E !important;
+  border: none !important;
+  border-radius: 10px !important;
+  font-weight: 700 !important;
+  height: 48px !important;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .heading-o2mV-p-d6,
+  .heading-o2mV-p-d6 h1,
+  .heading-o2mV-p-d6 h2 {
+    font-size: 28px !important;
+  }
+
+  .heading-W89qyZ9Szi,
+  .heading-W89qyZ9Szi h2,
+  .heading-W89qyZ9Szi h3 {
+    font-size: 16px !important;
+  }
+
+  [class*="button-"] a,
+  [class*="button-"] button {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
