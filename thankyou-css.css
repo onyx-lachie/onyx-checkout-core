@@ -42,41 +42,6 @@ body {
   background-color: #F8FAFB !important;
 }
 
-/* Tighten spacing between content rows (video, button, etc.) */
-.section-Bhz71NLQwr [class*="row-"],
-.row-bmptm2QSlX,
-.row-sJ8PHWEknt {
-  padding: 0 !important;
-  margin: 0 !important;
-  min-height: 0 !important;
-}
-
-.section-Bhz71NLQwr [class*="col-"],
-.col-0h8lr1nIQr,
-.col-jYr9Ir7Kw {
-  padding: 0 !important;
-  margin: 0 !important;
-  min-height: 0 !important;
-}
-
-/* Collapse any spacer/gap elements */
-.section-Bhz71NLQwr [class*="drop-zone"],
-.section-Bhz71NLQwr .inner-editor-widget {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* Video element - remove bottom margin */
-[class*="video-"] {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-/* Button element - remove top margin */
-[class*="button-"] {
-  margin-top: 8px !important;
-  padding-top: 0 !important;
-}
 
 /* ---------- Footer ---------- */
 .section-DO4P8iOVw {
