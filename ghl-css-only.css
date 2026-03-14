@@ -1,6 +1,7 @@
 /* ==========================================================================
    Onyx Core Checkout - CSS-Only Overrides for GHL
    Paste this into GHL Custom CSS. Changes appearance only, no functionality.
+   NOTE: Does NOT touch the form/payment inputs — leave those to GHL defaults.
    ========================================================================== */
 
 /* ---------- Google Font ---------- */
@@ -32,8 +33,7 @@ body {
 }
 
 /* ---------- Content Row (card container) ---------- */
-.row-pY8GKVaomj,
-.container-order-form-two-step {
+.row-pY8GKVaomj {
   background: #FFFFFF !important;
   border: 1px solid #E8EAF0 !important;
   border-radius: 16px !important;
@@ -42,174 +42,16 @@ body {
 }
 
 /* ---------- Headings ---------- */
-[class*="heading-"],
-.form-heading {
+[class*="heading-"] {
   color: #1C1C1E !important;
   font-weight: 700 !important;
   letter-spacing: -0.02em !important;
 }
 
-.form-heading {
-  font-size: 22px !important;
-  margin-bottom: 4px !important;
-}
-
-.form-sub-heading,
 [class*="sub-heading-"] {
   color: #6E7180 !important;
   font-weight: 400 !important;
   font-size: 14px !important;
-}
-
-/* ---------- Form Labels ---------- */
-label {
-  color: #1C1C1E !important;
-  font-size: 13px !important;
-  font-weight: 600 !important;
-  margin-bottom: 6px !important;
-  display: block !important;
-}
-
-/* ---------- Form Inputs (broad selectors for GHL) ---------- */
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-input[type="password"],
-input[type="url"],
-select,
-textarea,
-.c-order input,
-.c-order select,
-.c-order textarea,
-.c-form input,
-.c-form select,
-.c-form textarea,
-[class*="order-form"] input,
-[class*="order-form"] select,
-[class*="order-form"] textarea {
-  height: 48px !important;
-  border: 1.5px solid #E8EAF0 !important;
-  border-radius: 10px !important;
-  background: #FFFFFF !important;
-  color: #1C1C1E !important;
-  font-size: 15px !important;
-  padding: 0 14px !important;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="number"]:focus,
-input[type="password"]:focus,
-select:focus,
-textarea:focus,
-.c-order input:focus,
-.c-form input:focus {
-  border-color: #00F0B5 !important;
-  box-shadow: 0 0 0 3px rgba(0, 240, 181, 0.12) !important;
-  outline: none !important;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #9DA2B3 !important;
-  font-size: 14px !important;
-}
-
-/* Strip double-border from any wrapper divs */
-.form-input,
-.iti {
-  border: none !important;
-  background: transparent !important;
-  padding: 0 !important;
-  height: auto !important;
-  box-shadow: none !important;
-}
-
-/* ---------- Card / Payment Inputs ---------- */
-.card-details,
-.cc-holder {
-  border: none !important;
-  padding: 0 !important;
-  background: transparent !important;
-}
-
-/* ---------- Primary CTA Button ---------- */
-.form-btn,
-.form-btn button,
-button[type="submit"],
-.form-action button,
-.c-order button[type="submit"],
-.c-order .form-btn button {
-  background-color: #00F0B5 !important;
-  color: #1C1C1E !important;
-  border: none !important;
-  border-radius: 10px !important;
-  font-size: 16px !important;
-  font-weight: 700 !important;
-  height: 52px !important;
-  letter-spacing: -0.01em !important;
-  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
-  cursor: pointer !important;
-}
-
-.form-btn:hover,
-.form-btn button:hover,
-button[type="submit"]:hover,
-.form-action button:hover {
-  background-color: #00D9A3 !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 4px 16px rgba(0, 240, 181, 0.3) !important;
-}
-
-/* ---------- Step Tabs / Divider ---------- */
-.divider-form,
-.form-step-header,
-[class*="two-setp-order"] .divider-form {
-  border-color: #E8EAF0 !important;
-  background: transparent !important;
-}
-
-/* Step tab text */
-.divider-form span,
-.divider-form a,
-.divider-form div {
-  color: #9DA2B3 !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-}
-
-/* Active step tab */
-.divider-form .active,
-.divider-form .active span,
-.divider-form .active a,
-.divider-form .active div {
-  color: #1C1C1E !important;
-}
-
-/* Step number circles */
-.divider-form .step-number {
-  background-color: #E8EAF0 !important;
-  color: #9DA2B3 !important;
-  border: none !important;
-  width: 32px !important;
-  height: 32px !important;
-  border-radius: 50% !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  font-size: 13px !important;
-  font-weight: 700 !important;
-}
-
-.divider-form .step-number.active,
-.divider-form .active .step-number {
-  background-color: #00F0B5 !important;
-  color: #1C1C1E !important;
 }
 
 /* ---------- Bullet List (Features) ---------- */
@@ -243,7 +85,6 @@ button[type="submit"]:hover,
   background-size: 10px !important;
 }
 
-/* Also target ul inside bullet list component */
 [class*="bulletList-"] ul {
   list-style: none !important;
   padding-left: 0 !important;
@@ -255,73 +96,11 @@ button[type="submit"]:hover,
   border-left: 1px solid #E8EAF0 !important;
 }
 
-/* ---------- Security / Trust Text ---------- */
-.form-sub-heading {
-  color: #6E7180 !important;
-}
-
-/* 100% Secure text - make it a badge */
-.c-order .form-sub-heading:last-child,
-.c-order .form-sub-heading:last-of-type {
-  background: #E6FFF8 !important;
-  border: 1px solid rgba(0, 240, 181, 0.3) !important;
-  border-radius: 10px !important;
-  padding: 12px 16px !important;
-  color: #1C1C1E !important;
-  font-weight: 600 !important;
-  font-size: 13px !important;
-  text-align: center !important;
-  margin-top: 16px !important;
-}
-
-/* ---------- Terms & Conditions ---------- */
-.c-order [class*="paragraph-"],
-.c-order .terms-text {
-  color: #9DA2B3 !important;
-  font-size: 12px !important;
-}
-
 /* ---------- Paragraph Text ---------- */
 [class*="paragraph-"] {
   color: #6E7180 !important;
   font-size: 14px !important;
   line-height: 1.7 !important;
-}
-
-/* ---------- Links ---------- */
-a {
-  color: #00F0B5 !important;
-  text-decoration: none !important;
-  transition: color 0.2s ease !important;
-}
-
-a:hover {
-  color: #00D9A3 !important;
-}
-
-/* ---------- Checkbox styling ---------- */
-input[type="checkbox"] {
-  width: 18px !important;
-  height: 18px !important;
-  accent-color: #00F0B5 !important;
-  border-radius: 4px !important;
-}
-
-/* ---------- Secondary / Back Button ---------- */
-.form-button-subtle,
-.form-button-subtle button {
-  background: transparent !important;
-  color: #9DA2B3 !important;
-  border: none !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  cursor: pointer !important;
-  transition: color 0.2s ease !important;
-}
-
-.form-button-subtle:hover,
-.form-button-subtle button:hover {
-  color: #1C1C1E !important;
 }
 
 /* ---------- Footer ---------- */
@@ -345,24 +124,9 @@ input[type="checkbox"] {
   color: #00F0B5 !important;
 }
 
-/* ---------- Error States ---------- */
-input.error,
-.form-input.error input,
-.error input {
-  border-color: #EF4444 !important;
-  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1) !important;
-}
-
-/* ---------- Popup / Modal ---------- */
-.hl_main_popup .popup-body {
-  border-radius: 16px !important;
-  border: 1px solid #E8EAF0 !important;
-}
-
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
-  .row-pY8GKVaomj,
-  .container-order-form-two-step {
+  .row-pY8GKVaomj {
     border-radius: 12px !important;
     margin: 0 12px !important;
   }
@@ -370,11 +134,5 @@ input.error,
   .col-DeQVZy_WAX {
     border-left: none !important;
     border-top: 1px solid #E8EAF0 !important;
-  }
-
-  .form-btn button,
-  button[type="submit"] {
-    height: 48px !important;
-    font-size: 15px !important;
   }
 }
