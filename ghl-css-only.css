@@ -104,8 +104,18 @@ body {
 
 /* ---------- Right Column Background ---------- */
 .col-DeQVZy_WAX {
-  background: #F8FAFB !important;
+  background: #FFFFFF !important;
   border-left: 1px solid #E8EAF0 !important;
+}
+
+/* Hide any empty/spacer elements above the form */
+.col-DeQVZy_WAX > [class*="drop-zone"]:first-child,
+.col-DeQVZy_WAX > div:first-child:not(.c-order) {
+  min-height: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
 }
 
 /* ---------- Paragraph Text ---------- */
@@ -120,6 +130,8 @@ body {
   background-color: #1C1C1E !important;
   padding: 4px 0 !important;
   border-top: 1px solid #40424D !important;
+  min-height: 0 !important;
+  height: auto !important;
 }
 
 .section-DO4P8iOVw [class*="row-"] {
@@ -127,11 +139,26 @@ body {
   padding-bottom: 0 !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  min-height: 0 !important;
 }
 
 .section-DO4P8iOVw [class*="col-"] {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  min-height: 0 !important;
+}
+
+/* Kill any dark sections below the footer */
+.section-DO4P8iOVw ~ * {
+  display: none !important;
+}
+
+/* Strip empty space from footer section rows */
+.row-Rz4BR2x1eV,
+.row-pmLj2kSO_c {
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: 0 !important;
 }
 
 .section-DO4P8iOVw [class*="sub-heading-"],
