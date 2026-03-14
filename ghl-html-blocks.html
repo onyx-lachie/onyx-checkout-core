@@ -10,6 +10,27 @@
      Add this once as a Custom Code block (or in the page's custom CSS)
      ============================================= -->
 <style>
+/* Header */
+.onyx-header { width: 100%; }
+.onyx-header-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; height: 56px; }
+.onyx-header-logo { text-decoration: none !important; display: flex; align-items: baseline; }
+.onyx-logo-o { color: #00F0B5; font-size: 28px; font-weight: 800; font-family: 'Inter', sans-serif; }
+.onyx-logo-text { color: #1C1C1E; font-size: 28px; font-weight: 800; font-family: 'Inter', sans-serif; }
+.onyx-logo-r { color: #1C1C1E; font-size: 12px; vertical-align: super; font-family: 'Inter', sans-serif; }
+
+/* Footer */
+.onyx-footer { width: 100%; }
+.onyx-footer-inner { max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; }
+.onyx-footer-copyright { font-size: 13px; color: #6E7180; margin: 0; font-family: 'Inter', sans-serif; }
+.onyx-footer-links { font-size: 13px; color: #6E7180; margin: 0; font-family: 'Inter', sans-serif; }
+.onyx-footer-links a { color: #6E7180 !important; text-decoration: none; transition: color 0.2s ease; }
+.onyx-footer-links a:hover { color: #00F0B5 !important; }
+.onyx-footer-divider { margin: 0 8px; color: #40424D; }
+@media (max-width: 768px) {
+  .onyx-header-inner { justify-content: center; }
+  .onyx-footer-inner { flex-direction: column; gap: 8px; text-align: center; }
+}
+
 /* Onyx Core Includes */
 .onyx-includes { margin-bottom: 8px; }
 .onyx-includes-heading { font-size: 26px; font-weight: 800; color: #1C1C1E; margin-bottom: 24px; letter-spacing: -0.03em; font-family: 'Inter', sans-serif; }
@@ -42,6 +63,35 @@
 .testimonial-author span { font-size: 12px; color: #9DA2B3; font-family: 'Inter', sans-serif; }
 
 </style>
+
+
+<!-- =============================================
+     HEADER: Onyx Logo Bar
+     Replace the GHL header content with this
+     ============================================= -->
+<div class="onyx-header">
+  <div class="onyx-header-inner">
+    <a href="https://www.onyx-crm.com" class="onyx-header-logo">
+      <span class="onyx-logo-o">o</span><span class="onyx-logo-text">nyx</span><span class="onyx-logo-r">&reg;</span>
+    </a>
+  </div>
+</div>
+
+
+<!-- =============================================
+     FOOTER: Copyright + Contact Bar
+     Replace the GHL footer content with this
+     ============================================= -->
+<div class="onyx-footer">
+  <div class="onyx-footer-inner">
+    <p class="onyx-footer-copyright">&copy; 2026 Onyx. All rights reserved.</p>
+    <p class="onyx-footer-links">
+      <a href="mailto:support@onyx-crm.com">support@onyx-crm.com</a>
+      <span class="onyx-footer-divider">|</span>
+      <a href="tel:737-325-8808">737-325-8808</a>
+    </p>
+  </div>
+</div>
 
 
 <!-- =============================================
