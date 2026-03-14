@@ -12,9 +12,13 @@ body * {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
+/* ---------- Page Background ---------- */
+body {
+  background-color: #F8FAFB !important;
+}
+
 /* ---------- Header ---------- */
-.section-Aj8N1RzjU,
-[class*="section-"] .c-section:first-child {
+.section-Aj8N1RzjU {
   background-color: #FFFFFF !important;
   padding: 16px 0 !important;
   border-bottom: 1px solid #E8EAF0 !important;
@@ -22,8 +26,7 @@ body * {
 }
 
 /* ---------- Main Content Section ---------- */
-.section-QJzdnjwhgU,
-[class*="section-"]:nth-child(2) {
+.section-QJzdnjwhgU {
   background-color: #F8FAFB !important;
   padding: 48px 0 !important;
 }
@@ -59,34 +62,32 @@ body * {
 }
 
 /* ---------- Form Labels ---------- */
-.form-group label,
-.form-group .label,
-label:not(.form-input) {
+label {
   color: #1C1C1E !important;
   font-size: 13px !important;
   font-weight: 600 !important;
   margin-bottom: 6px !important;
   display: block !important;
-  background: none !important;
-  border: none !important;
-  padding: 0 !important;
-  height: auto !important;
 }
 
-/* ---------- Form Inputs ---------- */
-/* Wrapper div — strip border so only inner input is styled */
-.form-input {
-  border: none !important;
-  background: transparent !important;
-  padding: 0 !important;
-  height: auto !important;
-  box-shadow: none !important;
-}
-
-/* Actual input elements */
-.form-input input,
-.form-input select,
-.form-input textarea {
+/* ---------- Form Inputs (broad selectors for GHL) ---------- */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="url"],
+select,
+textarea,
+.c-order input,
+.c-order select,
+.c-order textarea,
+.c-form input,
+.c-form select,
+.c-form textarea,
+[class*="order-form"] input,
+[class*="order-form"] select,
+[class*="order-form"] textarea {
   height: 48px !important;
   border: 1.5px solid #E8EAF0 !important;
   border-radius: 10px !important;
@@ -96,22 +97,40 @@ label:not(.form-input) {
   padding: 0 14px !important;
   transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
   width: 100% !important;
+  box-sizing: border-box !important;
 }
 
-.form-input input:focus,
-.form-input select:focus,
-.form-input textarea:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus,
+.c-order input:focus,
+.c-form input:focus {
   border-color: #00F0B5 !important;
   box-shadow: 0 0 0 3px rgba(0, 240, 181, 0.12) !important;
   outline: none !important;
 }
 
-.form-input input::placeholder {
-  color: #C0C4CC !important;
+input::placeholder,
+textarea::placeholder {
+  color: #9DA2B3 !important;
   font-size: 14px !important;
 }
 
-/* ---------- Card Details / Payment Inputs ---------- */
+/* Strip double-border from any wrapper divs */
+.form-input,
+.iti {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  height: auto !important;
+  box-shadow: none !important;
+}
+
+/* ---------- Card / Payment Inputs ---------- */
 .card-details,
 .cc-holder {
   border: none !important;
@@ -123,7 +142,9 @@ label:not(.form-input) {
 .form-btn,
 .form-btn button,
 button[type="submit"],
-.form-action button {
+.form-action button,
+.c-order button[type="submit"],
+.c-order .form-btn button {
   background-color: #00F0B5 !important;
   color: #1C1C1E !important;
   border: none !important;
@@ -145,24 +166,33 @@ button[type="submit"]:hover,
   box-shadow: 0 4px 16px rgba(0, 240, 181, 0.3) !important;
 }
 
-/* ---------- Step Indicators ---------- */
-.form-step {
+/* ---------- Step Tabs / Divider ---------- */
+.divider-form,
+.form-step-header,
+[class*="two-setp-order"] .divider-form {
+  border-color: #E8EAF0 !important;
+  background: transparent !important;
+}
+
+/* Step tab text */
+.divider-form span,
+.divider-form a,
+.divider-form div {
   color: #9DA2B3 !important;
-  font-size: 13px !important;
+  font-size: 14px !important;
   font-weight: 600 !important;
 }
 
-.form-step.active,
-.form-step .active {
+/* Active step tab */
+.divider-form .active,
+.divider-form .active span,
+.divider-form .active a,
+.divider-form .active div {
   color: #1C1C1E !important;
 }
 
-.divider-form {
-  border-color: #E8EAF0 !important;
-}
-
-.divider-form .step-number,
-.divider-form span {
+/* Step number circles */
+.divider-form .step-number {
   background-color: #E8EAF0 !important;
   color: #9DA2B3 !important;
   border: none !important;
@@ -177,30 +207,28 @@ button[type="submit"]:hover,
 }
 
 .divider-form .step-number.active,
-.divider-form .active span {
+.divider-form .active .step-number {
   background-color: #00F0B5 !important;
   color: #1C1C1E !important;
 }
 
 /* ---------- Bullet List (Features) ---------- */
-[class*="bulletList-"],
-.c-bullet-list ul {
+[class*="bulletList-"] {
   list-style: none !important;
   padding-left: 0 !important;
 }
 
-[class*="bulletList-"] li,
-.c-bullet-list ul li {
+[class*="bulletList-"] li {
   position: relative !important;
   padding-left: 28px !important;
   margin-bottom: 14px !important;
   color: #6E7180 !important;
   font-size: 15px !important;
   line-height: 1.6 !important;
+  list-style: none !important;
 }
 
-[class*="bulletList-"] li::before,
-.c-bullet-list ul li::before {
+[class*="bulletList-"] li::before {
   content: "" !important;
   position: absolute !important;
   left: 0 !important;
@@ -215,16 +243,26 @@ button[type="submit"]:hover,
   background-size: 10px !important;
 }
 
-/* ---------- Right Column Background ---------- */
-[class*="col-DeQVZy"],
-[class*="col-"]:last-child .c-order {
-  background: #F8FAFB !important;
-  border-left: 1px solid #E8EAF0 !important;
-  padding: 32px !important;
+/* Also target ul inside bullet list component */
+[class*="bulletList-"] ul {
+  list-style: none !important;
+  padding-left: 0 !important;
 }
 
-/* ---------- Security / Trust Badge ---------- */
-.security-badge .form-sub-heading {
+/* ---------- Right Column Background ---------- */
+.col-DeQVZy_WAX {
+  background: #F8FAFB !important;
+  border-left: 1px solid #E8EAF0 !important;
+}
+
+/* ---------- Security / Trust Text ---------- */
+.form-sub-heading {
+  color: #6E7180 !important;
+}
+
+/* 100% Secure text - make it a badge */
+.c-order .form-sub-heading:last-child,
+.c-order .form-sub-heading:last-of-type {
   background: #E6FFF8 !important;
   border: 1px solid rgba(0, 240, 181, 0.3) !important;
   border-radius: 10px !important;
@@ -233,6 +271,14 @@ button[type="submit"]:hover,
   font-weight: 600 !important;
   font-size: 13px !important;
   text-align: center !important;
+  margin-top: 16px !important;
+}
+
+/* ---------- Terms & Conditions ---------- */
+.c-order [class*="paragraph-"],
+.c-order .terms-text {
+  color: #9DA2B3 !important;
+  font-size: 12px !important;
 }
 
 /* ---------- Paragraph Text ---------- */
@@ -253,6 +299,14 @@ a:hover {
   color: #00D9A3 !important;
 }
 
+/* ---------- Checkbox styling ---------- */
+input[type="checkbox"] {
+  width: 18px !important;
+  height: 18px !important;
+  accent-color: #00F0B5 !important;
+  border-radius: 4px !important;
+}
+
 /* ---------- Secondary / Back Button ---------- */
 .form-button-subtle,
 .form-button-subtle button {
@@ -271,22 +325,30 @@ a:hover {
 }
 
 /* ---------- Footer ---------- */
-.section-DO4P8iOVw,
-[class*="section-"]:last-child {
+.section-DO4P8iOVw {
   background-color: #1C1C1E !important;
-  padding: 0 !important;
+  padding: 20px 0 !important;
   border-top: 1px solid #40424D !important;
 }
 
 .section-DO4P8iOVw [class*="sub-heading-"],
-[class*="section-"]:last-child [class*="sub-heading-"] {
+.section-DO4P8iOVw [class*="sub-heading-"] * {
   color: #6E7180 !important;
   font-size: 13px !important;
 }
 
+.section-DO4P8iOVw a {
+  color: #6E7180 !important;
+}
+
+.section-DO4P8iOVw a:hover {
+  color: #00F0B5 !important;
+}
+
 /* ---------- Error States ---------- */
-.form-input.error,
-.form-input.error input {
+input.error,
+.form-input.error input,
+.error input {
   border-color: #EF4444 !important;
   box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1) !important;
 }
@@ -305,8 +367,7 @@ a:hover {
     margin: 0 12px !important;
   }
 
-  [class*="col-DeQVZy"],
-  [class*="col-"]:last-child .c-order {
+  .col-DeQVZy_WAX {
     border-left: none !important;
     border-top: 1px solid #E8EAF0 !important;
   }
