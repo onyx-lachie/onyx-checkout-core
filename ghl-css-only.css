@@ -108,15 +108,6 @@ body {
   border-left: 1px solid #E8EAF0 !important;
 }
 
-/* Hide any empty/spacer elements above the form */
-.col-DeQVZy_WAX > [class*="drop-zone"]:first-child,
-.col-DeQVZy_WAX > div:first-child:not(.c-order) {
-  min-height: 0 !important;
-  height: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  overflow: hidden !important;
-}
 
 /* ---------- Paragraph Text ---------- */
 [class*="paragraph-"] {
@@ -146,11 +137,6 @@ body {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   min-height: 0 !important;
-}
-
-/* Kill any dark sections below the footer */
-.section-DO4P8iOVw ~ * {
-  display: none !important;
 }
 
 /* Strip empty space from footer section rows */
