@@ -42,6 +42,19 @@ body {
   background-color: #F8FAFB !important;
 }
 
+/* Tighten spacing between content rows (video, button, etc.) */
+.section-Bhz71NLQwr [class*="row-"] {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.section-Bhz71NLQwr [class*="col-"] {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
 /* ---------- Footer ---------- */
 .section-DO4P8iOVw {
   background-color: #1C1C1E !important;
